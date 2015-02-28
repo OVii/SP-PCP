@@ -1,0 +1,247 @@
+/*
+ *A Multi-task Comparative Study on Scatter Plots and Parallel Coordinates Plots
+ *Developed as part of an MSc in Computer Science at the University of Oxford
+ *Copyright (C) 2014 Rassadarie Kanjanabose
+ *
+ *This program is free software: you can redistribute it and/or modify
+ *it under the terms of the GNU General Public License as published by
+ *the Free Software Foundation, either version 3 of the License, or
+ *(at your option) any later version.
+ *This program is distributed in the hope that it will be useful,
+ *but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *GNU General Public License for more details.
+ *You should have received a copy of the GNU General Public License
+ *along with this program.  If not, see <http://www.gnu.org/licenses/>. 
+*/
+
+@CHARSET "UTF-8";
+
+svg {
+	font-size: 18px;
+	font-family: Calibri;
+}
+
+.axis {
+	shape-rendering: crispEdges;
+}
+
+.axis line,.axis path {
+	fill: none;
+	stroke: #000;
+}
+
+.axis text {
+	text-shadow: 0 1px 0 #fff;
+	cursor: move;
+}
+
+.title {
+	font-size: 22px;
+	font-weight: bold;
+	text-anchor: middle;
+}
+
+.legend {
+	font-size: 16px;
+	font-style: oblique;
+}
+
+/* PCP */
+.foreground path {
+	fill: none;
+	stroke-width: 2.0px;
+}
+
+.foreground path.fade {
+	stroke: #000;
+	stroke-opacity: .05;
+}
+
+.brush .extent {
+	fill-opacity: .3;
+	stroke: #fff;
+	shape-rendering: crispEdges;
+}
+
+/* SCP */
+rect.extent {
+	fill: #000;
+	fill-opacity: .125;
+	stroke: #fff;
+}
+
+rect.frame {
+	fill: none;
+	fill-opacity: .7;
+	stroke: none;
+}
+
+circle {
+	stroke: #787575;
+}
+
+.ID {
+	font-size: 11px;
+	color: #333;
+}
+
+.cell text {
+	pointer-events: none;
+}
+
+.grid line {
+    stroke: lightgrey;
+    opacity: 0.7;
+}
+.grid path {
+      stroke-width: 1;
+}
+
+/* Table */
+table {
+	font-size: 18px;
+	font-family: Calibri;
+	text-align: center;
+	border-collapse: collapse;
+	width: 900px;
+	height: 300px;
+	margin-bottom:50px;
+	margin-left: 100px;
+}
+
+caption{
+	font-size: 25px;
+	font-family: sans-serif;
+	color: red;
+	margin-bottom:10px;
+}
+
+th {
+	border: 1px solid #000;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+td {
+	border: 1px solid #000;
+}
+
+/* Color */
+.standard{
+	fill: #333;
+	stroke: #333;
+	fill-opacity: .7;
+	stroke-opacity: .7;
+}
+
+/* Dark Green */
+.pcpRow1 {
+	stroke: rgb(0,180,150);
+}
+
+.scpRow1 {
+	fill: rgb(0,180,150);
+}
+
+.tableRow1{
+	background-color: rgb(179, 226, 205);
+}
+
+/* Red / Orange */
+
+.pcpRow2{
+	stroke: rgb(255,1,1);
+}
+
+.scpRow2{
+	fill: rgb(255,1,1);
+}
+
+.tableRow2{
+	background-color: rgb(253, 205, 172);
+}
+
+/* Purple / Blue */
+
+.pcpRow3{
+	stroke: rgb(157,157,243);
+}
+
+.scpRow3{
+	fill: rgb(157,157,243);
+}
+
+.tableRow3{
+	background-color: rgb(203, 213, 232);
+}
+
+/* Pink */
+
+.pcpRow4{
+	stroke: rgb(255,105,230);
+}
+
+.scpRow4{
+	fill: rgb(255,105,230);
+}
+
+.tableRow4{
+	background-color: rgb(244, 202, 228)
+}
+
+/* Light Green */
+
+.pcpRow5{
+	stroke: rgb(197,228,152);
+}
+
+.scpRow5{
+	fill: rgb(197,228,152);
+}
+
+.tableRow5{
+	background-color: rgb(230, 245, 201);
+}
+
+/* Yellow */
+
+.pcpRow6{
+	stroke: rgb(240,229,0);
+}
+
+.scpRow6{
+	fill: rgb(240,229,0);
+}
+
+.tableRow6{
+	background-color: rgb(255, 242, 174);
+}
+
+/* Brown */
+
+.pcpRow7{
+	stroke: rgb(228,166,132);
+}
+
+.scpRow7{
+	fill: rgb(228,166,132);
+}
+
+.tableRow7{
+	background-color: rgb(241, 226, 204);
+}
+
+/* Grey */
+
+.pcpRow8{
+	stroke: rgb(128,128,128);
+}
+
+.scpRow8{
+	fill: rgb(128,128,128);
+}
+
+.tableRow8{
+	background-color: rgb(204, 204, 204);
+}

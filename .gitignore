@@ -1,0 +1,24 @@
+###################
+# compiled source #
+###################
+*.class
+*.exe
+
+*.metadata
+*.project
+*.classpath
+
+###############
+# Directories #
+###############
+.settings/
+bin/
+build/
+target/
+
+
+.idea/
+*.*~
+*.swp
+*.swo
+*.vim
